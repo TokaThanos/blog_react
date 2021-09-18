@@ -1,13 +1,134 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  border: 1px solid #f2f2f2;
+  margin: 0 auto;
+}
+
+.navbar h1 {
+  color: #0a3097;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-left: 12px;
+  padding: 5px;
+}
+
+.navbar a:hover {
+  color: #0a3097;
+}
+
+.content {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.blog-preview {
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.blog-preview a {
+  text-decoration: none;
+}
+
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+
+.blog-details div {
+  margin: 20px 0;
+}
+
+.blog-details a {
+  margin-left: 5px;
+}
+
+.create {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create h2 {
+  font-size: 25px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.create label {
+  display: block;
+  text-align: left;
+}
+
+.create input,
+.create textarea,
+.create select {
+  display: block;
+  margin: 10px 0;
+  padding: 6px 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.create select {
+  margin-top: 20px;
+  width: auto;
+}
+
+.create button,
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create button:hover,
+.blog-details button:hover {
+  background: #ddd;
+  color: #f1356d;
+}
+
+.error h2 {
+  font-size: 30px;
+  color: #ff0707;
+  margin-bottom: 8px;
+}
+
+.error a {
+  text-decoration: none;
 }
